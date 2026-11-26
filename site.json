@@ -1,0 +1,34 @@
+{
+  "en": {
+    "name": "Psychology lenses",
+    "title": "Psychology lenses: one situation through Freud, Jung, CBT and 5 more schools",
+    "description": "Describe a relationship situation and see how psychoanalysis, Jung, CBT, attachment theory, family systems, transactional analysis, Gottman and NVC would look at it. Explains the school, never judges the person."
+  },
+  "ru": {
+    "name": "Психологические линзы",
+    "title": "Психологические линзы: ситуация глазами Фрейда, Юнга, КПТ и ещё 5 школ",
+    "description": "Опишите ситуацию в отношениях и посмотрите, как на неё взглянули бы психоанализ, Юнг, КПТ, теория привязанности, системная терапия, транзактный анализ, Готтман и ННО. Объясняет школу, а не судит людей."
+  },
+  "llms_intro": "Eight \"lenses\", one per school of psychology. Each lens lists what the school looks at, how it would read the situation, the questions it would ask, its limits and criticism, and sources. lenses.json is the single source of truth.",
+  "files": [
+    [
+      "lenses.json",
+      "lenses.json",
+      "all eight lenses in English and Russian"
+    ],
+    [
+      "prompts/en/all-lenses.md",
+      "All-lenses prompt",
+      "compares 2-3 fitting lenses in a chat"
+    ],
+    [
+      "SKILL.md",
+      "Claude skill",
+      "agent version"
+    ]
+  ],
+  "slug": "psychology-lenses",
+  "url": "https://pairclear.github.io/psychology-lenses/",
+  "repo": "https://github.com/pairclear/psychology-lenses",
+  "updated": "2026-11-26"
+}

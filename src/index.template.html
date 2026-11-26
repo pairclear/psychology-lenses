@@ -372,7 +372,7 @@ const store = {
 const save = () => store.set({ ...S, lang });
 
 function pickLang(){
-  const q = new URLSearchParams(location.search).get("lang");
+  const q = (new URLSearchParams(location.search).get("lang") || document.documentElement.getAttribute("data-lang"));
   if (q === "ru" || q === "en") return q;
   const saved = store.get();
   if (saved && (saved.lang === "ru" || saved.lang === "en")) return saved.lang;

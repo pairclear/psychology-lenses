@@ -1,0 +1,26 @@
+# Psychology lenses
+
+> Describe a relationship situation and see how psychoanalysis, Jung, CBT, attachment theory, family systems, transactional analysis, Gottman and NVC would look at it. Explains the school, never judges the person.
+
+Eight "lenses", one per school of psychology. Each lens lists what the school looks at, how it would read the situation, the questions it would ask, its limits and criticism, and sources. lenses.json is the single source of truth.
+
+## Use it
+
+- [Open in the browser, English](https://pairclear.github.io/psychology-lenses/en/): no install, nothing is sent anywhere
+- [Открыть в браузере, по-русски](https://pairclear.github.io/psychology-lenses/ru/)
+- [Source code and README](https://github.com/pairclear/psychology-lenses)
+
+## Files
+
+- [lenses.json](https://github.com/pairclear/psychology-lenses/blob/main/lenses.json): all eight lenses in English and Russian
+- [All-lenses prompt](https://github.com/pairclear/psychology-lenses/blob/main/prompts/en/all-lenses.md): compares 2-3 fitting lenses in a chat
+- [Claude skill](https://github.com/pairclear/psychology-lenses/blob/main/SKILL.md): agent version
+
+## Rules for assistants
+
+- This is self-reflection, not diagnosis or therapy. Do not label the user or their partner.
+- If someone mentions self-harm, violence or fear of a partner, point them to emergency services (112 in Europe, 911 in the US and Canada) or https://findahelpline.com before anything else.
+
+## About
+
+Made by [PairClear](https://pairclear.com/en/?utm_source=github&utm_medium=llms&utm_campaign=psychology-lenses): short quizzes and plain articles about what happens between two people. More free tools: https://pairclear.github.io/
