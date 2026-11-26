@@ -1,0 +1,454 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-11-26",
+  "lenses": [
+    {
+      "id": "psychodynamic",
+      "color": "#8a5a8c",
+      "sources": [
+        "Shedler, J. (2010). The efficacy of psychodynamic psychotherapy. American Psychologist, 65(2), 98–109.",
+        "McWilliams, N. (2004). Psychoanalytic Psychotherapy: A Practitioner's Guide. Guilford Press."
+      ],
+      "en": {
+        "name": "Psychodynamic",
+        "short": "Freud and the schools after him",
+        "origin": "Started with Sigmund Freud around 1900; today's psychodynamic approaches (object relations, self psychology, relational analysis) moved far from the original theory.",
+        "looks_at": "Hidden motives and feelings, and old relationship patterns that replay in the present.",
+        "ideas": [
+          ["Unconscious motives", "Part of what drives us is out of awareness. A fight about the dishes can carry a feeling about something else entirely."],
+          ["Defences", "Ways the mind avoids a painful feeling: projection (seeing in the other what is hard to see in yourself), displacement (anger at the boss lands on the partner), denial."],
+          ["Repetition", "We tend to recreate familiar relationship scenes from childhood, even painful ones, because they are familiar."],
+          ["Transference", "Feelings that belonged to an important figure from the past get attached to a person in the present."]
+        ],
+        "reading": "This school would look past the topic of the conflict and ask which feeling was hardest to show in that moment, and whose voice or which earlier scene the situation echoes. A repeating fight would be read as a familiar scene that both people keep replaying, often to finally get a different ending.",
+        "questions": [
+          "Whom from your past does this situation or this reaction remind you of?",
+          "Which feeling was the hardest to admit in that moment, even to yourself?",
+          "Is this a scene that keeps repeating in your relationships, not only in this one?",
+          "If the conflict were not really about its topic, what might it be about?"
+        ],
+        "limits": [
+          "Many of Freud's original ideas are hard to test and are not supported by research; modern psychodynamic therapy has some evidence, but that is about therapy, not about self-analysis.",
+          "Interpretations can be made to fit anything, and a confident 'hidden meaning' from a chat or a friend can be wrong and hurtful.",
+          "Deep work with the past is done slowly with a trained specialist, not in one conversation."
+        ]
+      },
+      "ru": {
+        "name": "Психодинамическая",
+        "short": "Фрейд и школы после него",
+        "origin": "Начинается с Зигмунда Фрейда около 1900 года; современные психодинамические подходы (теория объектных отношений, психология самости, реляционный анализ) далеко ушли от исходной теории.",
+        "looks_at": "Скрытые мотивы и чувства и старые сценарии отношений, которые повторяются в настоящем.",
+        "ideas": [
+          ["Бессознательные мотивы", "Часть того, что нами движет, не осознаётся. Ссора из-за посуды может нести чувство совсем о другом."],
+          ["Защиты", "Способы психики не встречаться с болезненным чувством: проекция (видеть в другом то, что трудно увидеть в себе), смещение (злость на начальника достаётся партнёру), отрицание."],
+          ["Повторение", "Мы склонны воспроизводить знакомые сцены отношений из детства, даже болезненные, потому что они знакомы."],
+          ["Перенос", "Чувства, которые относились к важному человеку из прошлого, переносятся на человека в настоящем."]
+        ],
+        "reading": "Эта школа посмотрела бы мимо темы конфликта и спросила, какое чувство в тот момент было труднее всего показать и чей голос или какую прошлую сцену напоминает ситуация. Повторяющуюся ссору она прочитала бы как знакомую сцену, которую оба снова разыгрывают, часто в надежде наконец получить другой финал.",
+        "questions": [
+          "Кого из твоего прошлого напоминает эта ситуация или эта реакция?",
+          "Какое чувство в тот момент было труднее всего признать, даже себе?",
+          "Эта сцена повторяется в твоих отношениях вообще, а не только в этих?",
+          "Если бы конфликт был не о своей теме, о чём он мог бы быть?"
+        ],
+        "limits": [
+          "Многие исходные идеи Фрейда трудно проверить, и исследования их не подтверждают; у современной психодинамической терапии есть доказательная база, но это про терапию, а не про самоанализ.",
+          "Интерпретацию можно подогнать под что угодно, и уверенный «скрытый смысл» от чата или подруги может оказаться неверным и ранить.",
+          "Глубокая работа с прошлым идёт медленно и со специалистом, а не за один разговор."
+        ]
+      }
+    },
+    {
+      "id": "jungian",
+      "color": "#5a6f9c",
+      "sources": [
+        "Jung, C. G., von Franz, M.-L. et al. (1964). Man and His Symbols. Doubleday.",
+        "Stevens, A. (1994). Jung: A Very Short Introduction. Oxford University Press."
+      ],
+      "en": {
+        "name": "Jungian",
+        "short": "Carl Jung's analytical psychology",
+        "origin": "Developed by Carl Gustav Jung after he split from Freud in 1913; continued by analytical psychologists.",
+        "looks_at": "What we project onto others, the roles we wear, and what the situation asks us to grow into.",
+        "ideas": [
+          ["Shadow", "Traits we do not accept in ourselves. They often show up as strong irritation at the same traits in someone else."],
+          ["Projection", "We see in a partner a quality, hope or fear that partly belongs to us. Falling in love and bitter disappointment can both involve projection."],
+          ["Persona", "The social mask: the role we play to be accepted. Conflicts sometimes start when the mask slips or stops fitting."],
+          ["Individuation", "The lifelong process of becoming more whole. A painful situation can be read as a call to develop a neglected side of yourself."]
+        ],
+        "reading": "This school would ask what in the other person provokes the strongest reaction, and whether some of that belongs to your own shadow or to an image you placed on them. It would treat the conflict less as a problem to fix and more as a sign of what is trying to develop in you.",
+        "questions": [
+          "What exactly irritates you most in the other person? Is there a trace of it in you, perhaps something you forbid yourself?",
+          "What did you hope this person would be? How close is that image to who they actually are?",
+          "Which role do you play in this situation, and is it still yours?",
+          "If this situation is a call to develop something in yourself, what might it be?"
+        ],
+        "limits": [
+          "Archetypes and the collective unconscious cannot be tested scientifically; this is a rich interpretive framework, not proven knowledge.",
+          "'Projection' can be turned into a weapon ('you are just projecting') and used to dismiss a real problem.",
+          "Popular personality-type tests built on Jung's typology have weak scientific support; Jung himself did not mean types as boxes."
+        ]
+      },
+      "ru": {
+        "name": "Юнгианская",
+        "short": "Аналитическая психология Карла Юнга",
+        "origin": "Создана Карлом Густавом Юнгом после разрыва с Фрейдом в 1913 году; её развивают аналитические психологи.",
+        "looks_at": "Что мы проецируем на других, какие роли носим и к какому росту зовёт ситуация.",
+        "ideas": [
+          ["Тень", "Черты, которые мы не принимаем в себе. Часто они проявляются как сильное раздражение на те же черты в другом."],
+          ["Проекция", "Мы видим в партнёре качество, надежду или страх, которые отчасти принадлежат нам. И влюблённость, и горькое разочарование могут быть связаны с проекцией."],
+          ["Персона", "Социальная маска: роль, которую играем, чтобы нас принимали. Конфликты иногда начинаются, когда маска сползает или перестаёт подходить."],
+          ["Индивидуация", "Процесс длиною в жизнь, в котором человек становится целостнее. Болезненную ситуацию можно прочитать как призыв развить заброшенную сторону себя."]
+        ],
+        "reading": "Эта школа спросила бы, что в другом человеке вызывает самую сильную реакцию и не принадлежит ли часть этого твоей собственной тени или образу, который ты на него наложил(а). Конфликт она рассматривала бы не столько как поломку, сколько как знак того, что в тебе пытается развиться.",
+        "questions": [
+          "Что именно сильнее всего раздражает в другом человеке? Есть ли след этого в тебе, может быть, то, что ты себе запрещаешь?",
+          "Каким ты надеялся(лась) увидеть этого человека? Насколько этот образ похож на него настоящего?",
+          "Какую роль ты играешь в этой ситуации, и твоя ли она до сих пор?",
+          "Если ситуация зовёт развить что-то в себе, что бы это могло быть?"
+        ],
+        "limits": [
+          "Архетипы и коллективное бессознательное нельзя проверить научно; это богатая система интерпретаций, а не доказанное знание.",
+          "«Проекцию» легко превратить в оружие («ты просто проецируешь») и отмахнуться от реальной проблемы.",
+          "У популярных тестов на типы личности, выросших из типологии Юнга, слабая научная база; сам Юнг не считал типы коробками."
+        ]
+      }
+    },
+    {
+      "id": "cbt",
+      "color": "#3f7f6e",
+      "sources": [
+        "Beck, A. T. (1988). Love Is Never Enough. Harper & Row.",
+        "Beck, J. S. (2020). Cognitive Behavior Therapy: Basics and Beyond (3rd ed.). Guilford Press."
+      ],
+      "en": {
+        "name": "Cognitive behavioural (CBT)",
+        "short": "Aaron Beck, Albert Ellis and followers",
+        "origin": "Grew from Aaron Beck's cognitive therapy and Albert Ellis's rational emotive therapy in the 1960s, joined with behavioural methods. Beck also wrote a book applying it to couples.",
+        "looks_at": "The link between what happened, what you told yourself about it, what you felt and what you did.",
+        "ideas": [
+          ["Situation, thought, feeling, action", "It is not only the event that shapes the feeling, but the quick interpretation of it. The same 'later' can mean 'I don't matter' or 'he's tired'."],
+          ["Automatic thoughts", "Fast, almost unnoticed thoughts that feel like facts: 'she doesn't care', 'it will always be like this'."],
+          ["Thinking traps", "Typical distortions: mind reading, all-or-nothing, overgeneralising ('always', 'never'), catastrophising, 'should' rules, taking things personally."],
+          ["Check and experiment", "Thoughts are treated as guesses: look at evidence for and against, think of other explanations, test them with a small action."]
+        ],
+        "reading": "This school would slow the moment down: what exactly happened, what went through your head, what you felt and how strongly, and what you did next. It would look for thinking traps in that chain and ask what else could be true and what a small, testable change in your response would be.",
+        "questions": [
+          "What exactly happened, as a camera would record it, without interpretations?",
+          "What went through your head in that moment? Which thought hurt the most?",
+          "What supports that thought, and what does not fit it? What else could be true?",
+          "What would you do differently next time if a more balanced thought were true?"
+        ],
+        "limits": [
+          "Not every painful thought is a distortion: sometimes the other person really is unfair, and reframing must not become a way to put up with mistreatment.",
+          "It focuses on the individual and the present and can underplay the relationship as a whole, the past and outside pressures such as money or illness.",
+          "CBT is one of the most studied approaches in therapy, but that evidence is about structured work, often with a specialist, not about one-off self-help."
+        ]
+      },
+      "ru": {
+        "name": "Когнитивно-поведенческая (КПТ)",
+        "short": "Аарон Бек, Альберт Эллис и последователи",
+        "origin": "Выросла из когнитивной терапии Аарона Бека и рационально-эмоциональной терапии Альберта Эллиса в 1960-х, соединившись с поведенческими методами. Бек написал и книгу о применении подхода к парам.",
+        "looks_at": "Связь между тем, что произошло, что ты себе об этом сказал(а), что почувствовал(а) и что сделал(а).",
+        "ideas": [
+          ["Ситуация, мысль, чувство, действие", "Чувство рождает не только событие, но и быстрая его интерпретация. Одно и то же «потом» можно услышать как «я не важна» или как «он устал»."],
+          ["Автоматические мысли", "Быстрые, почти незаметные мысли, которые ощущаются как факты: «ей всё равно», «так будет всегда»."],
+          ["Ловушки мышления", "Типичные искажения: чтение мыслей, «всё или ничего», сверхобобщение («всегда», «никогда»), катастрофизация, правила «должен», принятие на свой счёт."],
+          ["Проверка и эксперимент", "Мысли считаются гипотезами: смотрим доводы за и против, ищем другие объяснения, проверяем их маленьким действием."]
+        ],
+        "reading": "Эта школа замедлила бы момент: что именно произошло, что пронеслось в голове, что ты почувствовал(а) и насколько сильно, что сделал(а) дальше. Она поискала бы в этой цепочке ловушки мышления и спросила, что ещё может быть правдой и какое маленькое проверяемое изменение реакции можно попробовать.",
+        "questions": [
+          "Что именно произошло, как записала бы камера, без интерпретаций?",
+          "Что пронеслось в голове в тот момент? Какая мысль ранила сильнее всего?",
+          "Что подтверждает эту мысль, а что в неё не укладывается? Что ещё может быть правдой?",
+          "Что ты сделал(а) бы иначе в следующий раз, если бы правдой была более взвешенная мысль?"
+        ],
+        "limits": [
+          "Не каждая болезненная мысль искажение: иногда другой человек действительно несправедлив, и переформулирование не должно становиться способом терпеть плохое обращение.",
+          "Подход смотрит на одного человека и настоящее и может недооценивать отношения в целом, прошлое и внешнее давление вроде денег или болезни.",
+          "КПТ один из самых изученных подходов в терапии, но эти данные о структурированной работе, часто со специалистом, а не о разовой самопомощи."
+        ]
+      }
+    },
+    {
+      "id": "attachment",
+      "color": "#b85c3c",
+      "sources": [
+        "Bowlby, J. (1988). A Secure Base. Basic Books.",
+        "Hazan, C., & Shaver, P. (1987). Romantic love conceptualized as an attachment process. Journal of Personality and Social Psychology, 52(3), 511–524.",
+        "Fraley, R. C., & Waller, N. G. (1998). Adult attachment patterns: A test of the typological model. In J. A. Simpson & W. S. Rholes (Eds.), Attachment Theory and Close Relationships. Guilford Press."
+      ],
+      "en": {
+        "name": "Attachment theory",
+        "short": "John Bowlby, Mary Ainsworth, adult attachment research",
+        "origin": "John Bowlby and Mary Ainsworth studied the bond between children and caregivers from the 1950s; in 1987 Cindy Hazan and Phillip Shaver applied the idea to adult romantic love.",
+        "looks_at": "The need for closeness and safety, and what each person does when the connection feels threatened.",
+        "ideas": [
+          ["Safe haven and secure base", "We turn to a close person for comfort when things are hard and use the relationship as a base to explore the world."],
+          ["Protest", "When the bond feels threatened, people protest: calling again and again, criticising, picking a fight. Underneath it is often 'are you there for me?'."],
+          ["Two strategies", "Some people lean towards seeking more closeness when anxious, others towards pulling back and handling it alone. Most people mix both, and it varies with the partner."],
+          ["Pursue and withdraw", "One partner pursues, the other withdraws, and each move makes the other's stronger. The cycle, not one person, becomes the problem."]
+        ],
+        "reading": "This school would ask what each of you needed at that moment, closeness or space, and what you did to get it. A repeating fight would be read as a protest-and-withdraw cycle in which both people are trying to feel safe in different ways.",
+        "questions": [
+          "What did you need most in that moment: closeness, reassurance, space?",
+          "What did you do to get it, and how might it have looked from the other side?",
+          "Is there a cycle where one of you moves closer and the other pulls back? Who usually takes which part?",
+          "What would help you feel a bit safer in this relationship, and how could you ask for it directly?"
+        ],
+        "limits": [
+          "Research shows adult attachment is better described by two sliding scales than by fixed types, so 'I am anxious, he is avoidant' is an oversimplification.",
+          "Attachment patterns can change with experience and differ from one relationship to another.",
+          "Labelling a partner 'avoidant' from a few stories is guessing; it also does not explain or excuse control or cruelty."
+        ]
+      },
+      "ru": {
+        "name": "Теория привязанности",
+        "short": "Джон Боулби, Мэри Эйнсворт, исследования привязанности у взрослых",
+        "origin": "Джон Боулби и Мэри Эйнсворт изучали связь детей и взрослых, которые о них заботятся, с 1950-х; в 1987 году Синди Хазан и Филлип Шейвер применили идею к романтической любви взрослых.",
+        "looks_at": "Потребность в близости и безопасности и то, что каждый делает, когда связь кажется под угрозой.",
+        "ideas": [
+          ["Убежище и надёжная база", "К близкому человеку идут за утешением, когда трудно, и опираются на отношения, чтобы исследовать мир."],
+          ["Протест", "Когда связь кажется под угрозой, люди протестуют: звонят снова и снова, критикуют, затевают ссору. Под этим часто вопрос «ты со мной?»."],
+          ["Две стратегии", "Одни в тревоге тянутся к большей близости, другие отходят и справляются сами. У большинства есть и то и другое, и многое зависит от партнёра."],
+          ["Догоняющий и отстраняющийся", "Один догоняет, другой отходит, и каждый шаг усиливает шаг другого. Проблемой становится цикл, а не один человек."]
+        ],
+        "reading": "Эта школа спросила бы, что каждому из вас было нужно в тот момент, близость или пространство, и что вы делали, чтобы это получить. Повторяющуюся ссору она прочитала бы как цикл «протест и отход», в котором оба пытаются почувствовать себя в безопасности разными способами.",
+        "questions": [
+          "Что тебе было нужнее всего в тот момент: близость, уверенность, пространство?",
+          "Что ты сделал(а), чтобы это получить, и как это могло выглядеть с другой стороны?",
+          "Есть ли цикл, где один из вас приближается, а другой отходит? Кто обычно в какой роли?",
+          "Что помогло бы тебе чувствовать себя в этих отношениях чуть безопаснее и как об этом можно прямо попросить?"
+        ],
+        "limits": [
+          "Исследования показывают, что привязанность у взрослых точнее описывать двумя шкалами, а не фиксированными типами, так что «я тревожная, он избегающий» сильное упрощение.",
+          "Паттерны привязанности меняются с опытом и различаются от отношений к отношениям.",
+          "Назвать партнёра «избегающим» по нескольким историям значит гадать; к тому же это не объясняет и не оправдывает контроль или жестокость."
+        ]
+      }
+    },
+    {
+      "id": "family-systems",
+      "color": "#7a7a3a",
+      "sources": [
+        "Kerr, M. E., & Bowen, M. (1988). Family Evaluation. W. W. Norton.",
+        "Lerner, H. G. (1985). The Dance of Anger. Harper & Row."
+      ],
+      "en": {
+        "name": "Family systems",
+        "short": "Murray Bowen, Salvador Minuchin and systemic therapy",
+        "origin": "Family therapists of the 1950s–70s, including Murray Bowen and Salvador Minuchin, started treating the family, not one person, as the unit to understand.",
+        "looks_at": "The whole system of relationships: roles, alliances, who gets pulled in, and patterns passed down the generations.",
+        "ideas": [
+          ["Circular causality", "Instead of 'who started it', the question is how each person's move keeps the pattern going. Everyone's behaviour is a response to someone else's."],
+          ["Triangles", "When tension between two people rises, a third is pulled in: a child, a parent, a friend, work, a phone."],
+          ["Differentiation", "Staying yourself and staying connected at the same time: keeping your view without cutting off or giving in."],
+          ["Roles and generations", "Families hand down roles (the peacemaker, the responsible one, the problem one) and ways of handling conflict."]
+        ],
+        "reading": "This school would widen the picture: who else is involved or affected, what usually happens right before and after, and what role you tend to take. It would ask what the pattern does for the system and what might change in the whole if one person responded differently.",
+        "questions": [
+          "Who else is part of this situation, even if they were not in the room? Who gets pulled in when it gets tense?",
+          "What usually happens right before this situation and right after it?",
+          "What role do you usually play in your family or relationships: peacemaker, rescuer, the one who is always right?",
+          "If you responded a little differently next time, without cutting off and without giving in, what would that look like?"
+        ],
+        "limits": [
+          "'Everyone contributes' does not apply to violence and coercive control: responsibility lies with the person who uses them.",
+          "Several core concepts are hard to measure, and some early family theories wrongly blamed parents, especially mothers.",
+          "Changing a family pattern usually takes time and support; one person cannot be responsible for the whole system."
+        ]
+      },
+      "ru": {
+        "name": "Системная семейная",
+        "short": "Мюррей Боуэн, Сальвадор Минухин и системная терапия",
+        "origin": "Семейные терапевты 1950–70-х, среди них Мюррей Боуэн и Сальвадор Минухин, стали рассматривать как единицу не одного человека, а семью.",
+        "looks_at": "Всю систему отношений: роли, союзы, кого втягивают и какие сценарии передаются через поколения.",
+        "ideas": [
+          ["Круговая причинность", "Вместо «кто начал» вопрос в том, как шаг каждого поддерживает сценарий. Поведение каждого отвечает на поведение другого."],
+          ["Треугольники", "Когда напряжение между двумя растёт, втягивается третий: ребёнок, родитель, друг, работа, телефон."],
+          ["Дифференциация", "Оставаться собой и оставаться в контакте одновременно: держать свою позицию, не обрывая связь и не сдаваясь."],
+          ["Роли и поколения", "Семьи передают роли (миротворец, ответственный, «проблемный») и способы обходиться с конфликтом."]
+        ],
+        "reading": "Эта школа расширила бы картину: кто ещё вовлечён или затронут, что обычно происходит прямо до и после, какую роль ты обычно берёшь. Она спросила бы, какую функцию сценарий выполняет для системы и что изменилось бы во всём целом, если бы один человек ответил иначе.",
+        "questions": [
+          "Кто ещё участвует в этой ситуации, даже если его не было рядом? Кого втягивают, когда становится напряжённо?",
+          "Что обычно происходит прямо перед этой ситуацией и сразу после?",
+          "Какую роль ты обычно играешь в семье или отношениях: миротворца, спасателя, того, кто всегда прав?",
+          "Если в следующий раз ответить чуть иначе, не обрывая связь и не уступая, как это выглядело бы?"
+        ],
+        "limits": [
+          "«Каждый вносит вклад» не относится к насилию и принудительному контролю: ответственность лежит на том, кто их применяет.",
+          "Несколько ключевых понятий трудно измерить, а некоторые ранние семейные теории несправедливо винили родителей, особенно матерей.",
+          "Изменение семейного сценария обычно требует времени и поддержки; один человек не отвечает за всю систему."
+        ]
+      }
+    },
+    {
+      "id": "transactional-analysis",
+      "color": "#9c6b2f",
+      "sources": [
+        "Berne, E. (1964). Games People Play. Grove Press.",
+        "Karpman, S. (1968). Fairy tales and script drama analysis. Transactional Analysis Bulletin, 7(26), 39–43."
+      ],
+      "en": {
+        "name": "Transactional analysis",
+        "short": "Eric Berne; Stephen Karpman's drama triangle",
+        "origin": "Created by Eric Berne in the 1950s–60s and popularised by his book 'Games People Play'. The drama triangle was added by Stephen Karpman in 1968.",
+        "looks_at": "Which inner 'state' each person speaks from, and repeating 'games' with predictable endings.",
+        "ideas": [
+          ["Parent, Adult, Child", "Three ego states: the Parent (rules, care or criticism, often copied from our parents), the Adult (facts, here and now), the Child (feelings, play, hurt, rebellion)."],
+          ["Transactions", "Each line in a conversation comes from one state and invites a state in the other. A critical Parent line tends to call up a hurt or rebellious Child."],
+          ["Games", "Repeating exchanges with a hidden message and a familiar bad ending, where both end up feeling the way they always do."],
+          ["Drama triangle", "Roles of Persecutor, Rescuer and Victim. People switch roles during a conflict, and the triangle keeps spinning."]
+        ],
+        "reading": "This school would look at the exchange line by line: which state each phrase came from and which state it called up in the other. A repeating fight would be read as a 'game' or a turn of the drama triangle, and the way out as answering from the Adult: plainly, about facts and wishes.",
+        "questions": [
+          "Which of your phrases sounded like a strict Parent, which like a hurt Child, which like a calm Adult?",
+          "Which state did your words call up in the other person?",
+          "Does this exchange end the same way every time? What is its usual ending?",
+          "In this situation, are you more often in the role of Rescuer, Victim or Persecutor? What would an Adult reply sound like?"
+        ],
+        "limits": [
+          "Transactional analysis is a popular and practical model, but it has relatively little rigorous research behind it.",
+          "Its terms can be misused as put-downs ('you are being a Child') instead of a way to understand.",
+          "The model simplifies: real people and real conflicts are more complex than three states and three roles."
+        ]
+      },
+      "ru": {
+        "name": "Транзактный анализ",
+        "short": "Эрик Берн; треугольник Карпмана",
+        "origin": "Создан Эриком Берном в 1950–60-х и стал популярен благодаря книге «Игры, в которые играют люди». Драматический треугольник добавил Стивен Карпман в 1968 году.",
+        "looks_at": "Из какого внутреннего «состояния» говорит каждый и повторяющиеся «игры» с предсказуемым финалом.",
+        "ideas": [
+          ["Родитель, Взрослый, Ребёнок", "Три эго-состояния: Родитель (правила, забота или критика, часто перенятые у родителей), Взрослый (факты, здесь и сейчас), Ребёнок (чувства, игра, обида, бунт)."],
+          ["Транзакции", "Каждая реплика идёт из одного состояния и приглашает состояние в другом. Реплика критикующего Родителя обычно вызывает обиженного или бунтующего Ребёнка."],
+          ["Игры", "Повторяющиеся обмены со скрытым посланием и знакомым плохим финалом, в котором оба чувствуют себя как всегда."],
+          ["Треугольник Карпмана", "Роли Преследователя, Спасателя и Жертвы. В ходе конфликта люди меняются ролями, и треугольник продолжает крутиться."]
+        ],
+        "reading": "Эта школа посмотрела бы на разговор по репликам: из какого состояния пришла каждая фраза и какое состояние она вызвала в другом. Повторяющуюся ссору она прочитала бы как «игру» или оборот драматического треугольника, а выход увидела бы в ответе из Взрослого: прямо, о фактах и желаниях.",
+        "questions": [
+          "Какие твои фразы звучали как строгий Родитель, какие как обиженный Ребёнок, какие как спокойный Взрослый?",
+          "Какое состояние твои слова вызвали в другом человеке?",
+          "Этот разговор каждый раз заканчивается одинаково? Какой у него обычный финал?",
+          "В этой ситуации ты чаще Спасатель, Жертва или Преследователь? Как прозвучал бы ответ из Взрослого?"
+        ],
+        "limits": [
+          "Транзактный анализ популярная и практичная модель, но строгих исследований за ней сравнительно мало.",
+          "Её термины легко превратить в уколы («ведёшь себя как Ребёнок») вместо способа понять.",
+          "Модель упрощает: реальные люди и конфликты сложнее трёх состояний и трёх ролей."
+        ]
+      }
+    },
+    {
+      "id": "gottman",
+      "color": "#4f7fa8",
+      "sources": [
+        "Gottman, J. M., & Silver, N. (1999). The Seven Principles for Making Marriage Work. Crown.",
+        "Heyman, R. E. (2001). Observation of couple conflicts: Clinical assessment applications, stubborn truths, and shaky foundations. Psychological Assessment, 13(1), 5–35."
+      ],
+      "en": {
+        "name": "Gottman couples research",
+        "short": "John and Julie Gottman's observational studies",
+        "origin": "Based on John Gottman's lab studies of couples' conversations from the 1970s onward; later turned into a couples therapy method with Julie Schwartz Gottman.",
+        "looks_at": "How a couple's conversation goes: how it starts, which harmful patterns appear, and whether repair happens.",
+        "ideas": [
+          ["Four harmful patterns", "Criticism (attacking the person, not the action), contempt (mockery, eye-rolling, superiority), defensiveness, and stonewalling (shutting down, going silent)."],
+          ["Harsh start", "How a conversation starts strongly shapes how it ends. A soft start names the feeling and the wish without blame."],
+          ["Repair attempts", "Small moves that stop escalation: a joke, a touch, 'let's start over'. What matters is not the absence of fights but whether repair works."],
+          ["Bids for connection", "Small everyday requests for attention ('look at this'). Turning towards them builds goodwill for hard moments."]
+        ],
+        "reading": "This school would look at the conversation itself: how it started, whether criticism, contempt, defensiveness or stonewalling showed up, whether anyone was too overwhelmed to listen, and whether there was an attempt at repair. It would separate problems that can be solved from lasting differences that can only be talked about well.",
+        "questions": [
+          "How did the conversation start? What were the first words, and how could they sound softer?",
+          "Did criticism, contempt, defensiveness or silence show up? From whom, and in which phrase?",
+          "Was there an attempt to stop the escalation or make up? Did it work?",
+          "Is this a problem that can be solved, or a lasting difference you need a way to live with?"
+        ],
+        "limits": [
+          "Claims that the method predicts divorce with very high accuracy were criticised: the models were fitted to the same data they were tested on.",
+          "Much of the research was done with married, mostly white, middle-class American couples, so it may not fit everyone equally.",
+          "It describes patterns in a couple, not the character of one partner, and it is not meant for relationships with violence."
+        ]
+      },
+      "ru": {
+        "name": "Исследования пар Готтмана",
+        "short": "Наблюдательные исследования Джона и Джули Готтман",
+        "origin": "Основано на лабораторных наблюдениях Джона Готтмана за разговорами пар с 1970-х; позже вместе с Джули Шварц Готтман превратилось в метод парной терапии.",
+        "looks_at": "Как идёт разговор пары: как начинается, какие разрушительные паттерны появляются и случается ли восстановление.",
+        "ideas": [
+          ["Четыре разрушительных паттерна", "Критика (нападение на человека, а не на поступок), презрение (насмешка, закатывание глаз, превосходство), оборона и уход в глухую стену (замолчать, отключиться)."],
+          ["Жёсткий старт", "То, как начинается разговор, сильно определяет, чем он закончится. Мягкий старт называет чувство и желание без обвинения."],
+          ["Попытки восстановления", "Маленькие действия, которые останавливают эскалацию: шутка, прикосновение, «давай начнём заново». Важно не отсутствие ссор, а то, срабатывает ли восстановление."],
+          ["Запросы на контакт", "Маленькие ежедневные просьбы о внимании («смотри»). Отклик на них копит доброжелательность для трудных моментов."]
+        ],
+        "reading": "Эта школа посмотрела бы на сам разговор: как он начался, появились ли критика, презрение, оборона или стена молчания, не был ли кто-то слишком захлёстнут, чтобы слушать, и была ли попытка восстановления. Она отделила бы решаемые проблемы от постоянных различий, о которых можно только научиться хорошо разговаривать.",
+        "questions": [
+          "Как начался разговор? Какими были первые слова и как они могли бы прозвучать мягче?",
+          "Появились ли критика, презрение, оборона или молчание? У кого и в какой фразе?",
+          "Была ли попытка остановить эскалацию или помириться? Сработала ли она?",
+          "Это проблема, которую можно решить, или постоянное различие, с которым нужно научиться жить?"
+        ],
+        "limits": [
+          "Утверждения, что метод предсказывает развод с очень высокой точностью, критиковали: модели подгоняли под те же данные, на которых проверяли.",
+          "Большая часть исследований проводилась на женатых, в основном белых американских парах среднего класса, поэтому подходит не всем одинаково.",
+          "Подход описывает паттерны пары, а не характер одного партнёра, и не предназначен для отношений с насилием."
+        ]
+      }
+    },
+    {
+      "id": "nvc",
+      "color": "#6b8f3e",
+      "sources": [
+        "Rosenberg, M. B. (2003). Nonviolent Communication: A Language of Life (2nd ed.). PuddleDancer Press."
+      ],
+      "en": {
+        "name": "Nonviolent communication",
+        "short": "Marshall Rosenberg's NVC",
+        "origin": "Developed by psychologist Marshall Rosenberg from the 1960s, building on Carl Rogers's person-centred approach. It is a communication practice rather than a school of therapy.",
+        "looks_at": "The difference between what happened and how we judge it, and the feelings, needs and requests behind words.",
+        "ideas": [
+          ["Observation, not evaluation", "'You came home at 11 without texting' is an observation. 'You don't care about me' is an evaluation, and it invites defence."],
+          ["Feelings", "Naming your own feeling (hurt, worried, tired) instead of thoughts dressed as feelings ('I feel ignored' is really about the other's actions)."],
+          ["Needs", "Behind every feeling is a need: rest, closeness, respect, predictability. Conflicts usually clash over strategies, not needs."],
+          ["Requests", "A concrete, doable request that can be refused, as opposed to a demand: 'Could you text me if you'll be later than 10?'"]
+        ],
+        "reading": "This school would separate what happened from the judgements about it, then look for the feeling and the unmet need on each side. It would read the conflict as two people trying to meet real needs with strategies that collide, and suggest putting your part into one clear request.",
+        "questions": [
+          "What exactly happened, without judgements? Try one sentence a camera could confirm.",
+          "What did you feel? Name the feeling, not a thought about the other person.",
+          "Which of your needs was not met? What might the other person have needed at that moment?",
+          "What concrete request could you make, one the other person could say yes or no to?"
+        ],
+        "limits": [
+          "There is little rigorous research on NVC; most of the support comes from practice and small studies.",
+          "Used mechanically, it can sound scripted or be turned into a polite way to control or guilt-trip.",
+          "It assumes both people are willing to listen; it is not a tool for situations of abuse, where safety comes first."
+        ]
+      },
+      "ru": {
+        "name": "Ненасильственное общение",
+        "short": "ННО Маршалла Розенберга",
+        "origin": "Разработано психологом Маршаллом Розенбергом с 1960-х на основе клиент-центрированного подхода Карла Роджерса. Это практика общения, а не школа терапии.",
+        "looks_at": "Разницу между тем, что произошло, и тем, как мы это оцениваем, и чувства, потребности и просьбы за словами.",
+        "ideas": [
+          ["Наблюдение, а не оценка", "«Ты пришёл в 11 и не написал» наблюдение. «Тебе на меня плевать» оценка, и она приглашает защищаться."],
+          ["Чувства", "Называть своё чувство (обидно, тревожно, устала) вместо мыслей, переодетых в чувства («я чувствую, что меня игнорируют» на самом деле о действиях другого)."],
+          ["Потребности", "За каждым чувством стоит потребность: отдых, близость, уважение, предсказуемость. В конфликте обычно сталкиваются способы, а не потребности."],
+          ["Просьбы", "Конкретная выполнимая просьба, на которую можно ответить «нет», в отличие от требования: «Можешь написать, если задержишься позже десяти?»"]
+        ],
+        "reading": "Эта школа отделила бы то, что произошло, от оценок и поискала бы чувство и неудовлетворённую потребность с каждой стороны. Конфликт она прочитала бы как попытку двух людей удовлетворить реальные потребности способами, которые сталкиваются, и предложила бы сложить свою часть в одну ясную просьбу.",
+        "questions": [
+          "Что именно произошло, без оценок? Попробуй одно предложение, которое подтвердила бы камера.",
+          "Что ты почувствовал(а)? Назови чувство, а не мысль о другом человеке.",
+          "Какая твоя потребность осталась неудовлетворённой? Что могло быть нужно другому человеку в тот момент?",
+          "Какую конкретную просьбу ты мог(ла) бы высказать, такую, на которую можно ответить «да» или «нет»?"
+        ],
+        "limits": [
+          "Строгих исследований ННО мало; поддержка в основном идёт из практики и небольших исследований.",
+          "Если применять механически, звучит заученно или превращается в вежливый способ контролировать или давить на чувство вины.",
+          "Подход предполагает, что оба готовы слушать; это не инструмент для ситуаций насилия, где на первом месте безопасность."
+        ]
+      }
+    }
+  ]
+}

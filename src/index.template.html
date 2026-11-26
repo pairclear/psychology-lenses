@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Психологические линзы · Psychology lenses</title>
+<meta name="description" content="Посмотри на ситуацию в отношениях глазами восьми школ психологии: психоанализ, Юнг, КПТ, привязанность, системная терапия, транзактный анализ, Готтман, ННО. Без диагнозов, в браузере. See one relationship situation through eight schools of psychology.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Психологические линзы · Psychology lenses">
+<meta property="og:description" content="Одна ситуация, восемь школ психологии. Объясняет школу, а не судит людей. Всё остаётся в браузере.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a1714'/%3E%3Ccircle cx='13' cy='16' r='6' fill='none' stroke='%23c0613f' stroke-width='2.5'/%3E%3Ccircle cx='20' cy='16' r='6' fill='none' stroke='%23efe9df' stroke-width='2.5'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#faf7f2; --card:#f2ede5; --field:#ffffff; --ink:#1a1714; --muted:#6b645c; --line:#e4ddd2;
+  --accent:#b85c3c; --accent-soft:#f3e2d9; --btn:#1a1714; --btn-ink:#faf7f2; --focus:#b85c3c; --warn:#8a5a1f; --warn-soft:#f6ead3;
+  --serif:"Iowan Old Style","Charter","Georgia","Cambria","Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Inter","Helvetica Neue",Arial,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --card:#211e19; --field:#1b1814; --ink:#efe9df; --muted:#a39b8f; --line:#332e27;
+    --accent:#d9774f; --accent-soft:#3a271e; --btn:#efe9df; --btn-ink:#15130f; --warn:#e0b36a; --warn-soft:#33281a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --card:#211e19; --field:#1b1814; --ink:#efe9df; --muted:#a39b8f; --line:#332e27;
+  --accent:#d9774f; --accent-soft:#3a271e; --btn:#efe9df; --btn-ink:#15130f; --warn:#e0b36a; --warn-soft:#33281a;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--sans);}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:20px;text-decoration:none}
+.mark{position:relative;display:inline-block;width:28px;height:28px;border-radius:8px;background:var(--ink)}
+.mark i,.mark b{position:absolute;top:8px;width:12px;height:12px;border-radius:50%;border:2px solid var(--accent)}
+.mark i{left:5px}.mark b{left:11px;border-color:var(--bg)}
+.langs{display:flex;gap:4px}
+.langs button{font:inherit;font-size:14px;background:none;border:1px solid transparent;color:var(--muted);padding:4px 10px;border-radius:999px;cursor:pointer}
+.langs button[aria-pressed="true"]{color:var(--ink);border-color:var(--line);background:var(--card)}
+main{padding:40px 0 56px;min-height:60vh}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-height:1.15;margin:0}
+h1{font-size:clamp(34px,6vw,54px)}
+h2{font-size:clamp(28px,4.4vw,38px)}
+h3{font-size:20px}
+.lead{font-size:19px;max-width:640px;margin:18px 0 0}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.grid2{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
+@media (max-width:860px){.grid2{grid-template-columns:1fr;gap:28px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.steps{list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-left:40px;margin:0 0 14px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center}
+label.lbl,.lbl{display:block;font-weight:600;margin:28px 0 8px}
+.lbl .muted{font-weight:400}
+textarea,input[type=text]{width:100%;font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:10px;padding:12px 14px;outline:none;transition:border-color .15s, box-shadow .15s}
+textarea:focus,input[type=text]:focus{border-color:var(--focus);box-shadow:0 0 0 3px var(--accent-soft)}
+textarea{min-height:130px;resize:vertical}
+textarea.ans{min-height:72px;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{font:inherit;font-size:14px;background:transparent;border:1px solid var(--line);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer}
+.chip:hover{border-color:var(--accent)}
+.lensgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.lensgrid{grid-template-columns:1fr}}
+.lens{font:inherit;text-align:left;display:flex;flex-direction:column;justify-content:flex-start;background:var(--field);border:1px solid var(--line);border-radius:12px;padding:12px 14px 12px 40px;cursor:pointer;color:var(--ink);position:relative;line-height:1.35}
+.lens b{display:block;font-size:16px}
+.lens span{display:block;font-size:14px;color:var(--muted);margin-top:3px}
+.lens::before{content:"";position:absolute;left:14px;top:15px;width:16px;height:16px;border-radius:5px;border:2px solid var(--line);background:var(--field)}
+.lens[aria-pressed="true"]{border-color:var(--c);box-shadow:inset 0 0 0 1px var(--c)}
+.lens[aria-pressed="true"]::before{background:var(--c);border-color:var(--c);box-shadow:inset 0 0 0 3px var(--field)}
+.lens:hover{border-color:var(--c)}
+.linkrow{display:flex;gap:14px;margin-top:10px;font-size:14px}
+.linkbtn{font:inherit;font-size:14px;background:none;border:none;color:var(--muted);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+.btn{font:inherit;font-weight:600;font-size:16px;background:var(--btn);color:var(--btn-ink);border:1px solid var(--btn);padding:12px 20px;border-radius:10px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--ink)}
+.btn.link{background:none;border:none;padding:12px 4px;color:var(--muted);font-weight:500;text-decoration:underline;text-underline-offset:3px}
+.btn:focus-visible,.chip:focus-visible,.lens:focus-visible,.tab:focus-visible,.langs button:focus-visible,.linkbtn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.note{border-left:3px solid var(--accent);background:var(--card);padding:14px 18px;border-radius:0 10px 10px 0;font-size:15px}
+.warn{border-left:3px solid var(--warn);background:var(--warn-soft);padding:12px 16px;border-radius:0 10px 10px 0;font-size:15px;margin-top:12px}
+.warn.crisis{border-left-color:var(--accent);background:var(--accent-soft)}
+.warn b{display:block;margin-bottom:2px}
+/* tabs */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:26px}
+.tab{font:inherit;font-size:14px;background:transparent;border:1px solid var(--line);color:var(--muted);padding:6px 12px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+.tab i{width:9px;height:9px;border-radius:50%;background:var(--c,var(--muted))}
+.tab[aria-current="true"]{color:var(--ink);border-color:var(--ink);background:var(--card)}
+.tab.done{color:var(--ink)}
+.kicker{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);margin-bottom:8px}
+.kicker i{width:10px;height:10px;border-radius:50%;background:var(--c)}
+.sit{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 18px;font-size:15px;white-space:pre-wrap}
+.sit b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px;white-space:normal}
+section.part{margin-top:34px}
+section.part>h3{margin-bottom:14px}
+.ideas{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:720px){.ideas{grid-template-columns:1fr}}
+.idea{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;border-top:3px solid var(--c)}
+.idea b{display:block;margin-bottom:4px}
+.idea p{margin:0;font-size:15px;color:var(--ink)}
+.reading{font-family:var(--serif);font-size:20px;line-height:1.5;max-width:760px;margin:0;border-left:3px solid var(--c);padding-left:18px}
+.qa{margin:0 0 18px}
+.qa label{display:block;font-weight:600;margin-bottom:8px}
+.qa label span{color:var(--c);margin-right:6px}
+ul.lim{margin:0;padding-left:22px}
+ul.lim li{margin-bottom:8px}
+.src{font-size:14px;color:var(--muted);margin:0;padding-left:20px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.navrow{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.sum{margin-top:24px}
+.sum .l{margin-bottom:18px}
+.sum .l h4{margin:0 0 6px;font-size:15px;display:flex;align-items:center;gap:8px}
+.sum .l h4 i{width:9px;height:9px;border-radius:50%;background:var(--c)}
+.sum .l p{margin:0 0 6px;font-size:15px}
+.sum .l p em{color:var(--muted);font-style:normal}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:15px;opacity:0;transition:.2s;pointer-events:none;z-index:9}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+footer{border-top:1px solid var(--line);padding:36px 0 48px;font-size:15px;color:var(--muted)}
+footer .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media (max-width:820px){footer .cols{grid-template-columns:1fr}}
+footer h3{font-family:var(--sans);font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin-bottom:8px}
+footer p{margin:0 0 10px}
+details{margin-top:28px;border-top:1px solid var(--line);padding-top:20px}
+summary{cursor:pointer;font-weight:600;color:var(--ink)}
+details p{max-width:720px}
+@media print{
+  header.top,.actions,.langs,.tabs,.navrow,footer .cols>div:nth-child(3),.btn,.chips{display:none!important}
+  body{background:#fff;color:#000}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" id="home"><span class="mark" aria-hidden="true"><i></i><b></b></span><span data-i="brand"></span></a>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main><div class="wrap" id="app" aria-live="polite"></div></main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3 data-i="f_what_h"></h3>
+        <p data-i="f_what"></p>
+      </div>
+      <div>
+        <h3 data-i="f_crisis_h"></h3>
+        <p data-i="f_crisis" data-html></p>
+      </div>
+      <div>
+        <h3 data-i="f_priv_h"></h3>
+        <p data-i="f_priv"></p>
+        <p><a id="pclink" href="https://pairclear.com/?utm_source=github&amp;utm_medium=tool&amp;utm_campaign=psychology-lenses" target="_blank" rel="noopener" data-i="f_pc"></a></p>
+        <p><a href="https://github.com/pairclear/psychology-lenses" target="_blank" rel="noopener" data-i="f_src"></a></p>
+      </div>
+    </div>
+    <details>
+      <summary data-i="m_h"></summary>
+      <p data-i="m1"></p>
+      <p data-i="m2"></p>
+      <p data-i="m3"></p>
+    </details>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script id="lenses-data" type="application/json">/*@@DATA@@*/</script>
+<script>
+/*@@CORE@@*/
+</script>
+<script>
+(() => {
+"use strict";
+
+const DATA = JSON.parse(document.getElementById("lenses-data").textContent);
+const LENSES = DATA.lenses;
+const byId = Object.fromEntries(LENSES.map(l => [l.id, l]));
+const KEY = "psychology-lenses:v1";
+const CAMPAIGN = "psychology-lenses";
+
+const T = {
+  ru: {
+    brand: "Психологические линзы",
+    h1: "Одна ситуация, восемь школ психологии",
+    lead: "Опиши, что произошло между тобой и другим человеком, и посмотри, как это прочитали бы психоанализ, Юнг, КПТ, теория привязанности и ещё четыре подхода. Инструмент объясняет школы, а не выносит вердикт о людях.",
+    sit_l: "Ситуация",
+    sit_opt: "(по желанию, можно просто почитать о линзах)",
+    sit_ph: "Что произошло, кто что сказал или сделал, что ты почувствовал(а). Факты и действия, без ярлыков.",
+    ex_l: "Выдуманные примеры:",
+    examples: [
+      ["посуда и «потом»", "Пример (выдуман). Вечером прошу партнёра помочь с посудой. Слышу «потом», он продолжает листать телефон. Говорю, что всегда всё делаю одна. Он молча уходит в другую комнату и не разговаривает до утра. Такое повторяется почти каждую неделю."],
+      ["не пишет и злится", "Пример (выдуман). Она задерживается с друзьями и не отвечает на сообщения. Я звоню пять раз. Когда она приходит, говорит, что я её контролирую. Я замолкаю на два дня, потом мы делаем вид, что ничего не было."],
+      ["вопросы мамы", "Пример (выдуман). При каждой встрече моя мама спрашивает, когда мы поженимся. Я отшучиваюсь. После этого партнёр весь вечер холоден, а дома говорит, что я никогда его не защищаю."]
+    ],
+    lenses_l: "Линзы",
+    all: "Выбрать все", none: "Снять все",
+    go: "Посмотреть через линзы",
+    pick_one: "Выбери хотя бы одну линзу.",
+    how_h: "Как это устроено",
+    how: [
+      "Опиши ситуацию своими словами или возьми выдуманный пример.",
+      "Выбери одну или несколько линз.",
+      "Для каждой прочитай, на что смотрит школа и как бы она увидела такую ситуацию, и ответь себе на её вопросы.",
+      "В итоге сравни линзы и запиши один маленький шаг. Если хочется продолжить в чате, скопируй готовый промпт."
+    ],
+    how_note: "Линзы не скажут, кто прав и «кто он такой». Они показывают разные способы смотреть на одно и то же.",
+    resume_h: "Есть незаконченный разбор",
+    resume: "Продолжить", restart: "Начать заново",
+    w_label_h: "Попробуй описать действия, а не человека",
+    w_label: (w) => "Слова вроде " + w + " описывают человека, а не то, что произошло. Линзы работают с действиями: что именно было сказано или сделано, как часто, что ты почувствовал(а). Ярлык по рассказу поставить нельзя, а действия можно разобрать.",
+    w_safe_h: "Если тебе страшно или тебя контролируют",
+    w_safe: "Насилие, угрозы и контроль не «динамика двоих»: ответственность на том, кто это делает. Линзы здесь не главное. Позаботься о безопасности: экстренная служба 112 (911 в США и Канаде), бесплатные линии помощи на <a href=\"https://findahelpline.com\" target=\"_blank\" rel=\"noopener\">findahelpline.com</a>.",
+    w_crisis_h: "Это важнее любого упражнения",
+    w_crisis: "Если есть мысли навредить себе, пожалуйста, обратись за помощью прямо сейчас: экстренная служба 112 (911 в США и Канаде) или бесплатная линия поддержки в твоей стране на <a href=\"https://findahelpline.com\" target=\"_blank\" rel=\"noopener\">findahelpline.com</a>. Ты не обязан(а) справляться с этим один(одна).",
+    sit_k: "Ситуация",
+    looks_h: "На что смотрит",
+    ideas_h: "Ключевые идеи",
+    reading_h: "Как эта школа прочитала бы такую ситуацию",
+    reading_note: "Это общий способ смотреть, а не вывод о тебе или другом человеке.",
+    q_h: "Вопросы к себе",
+    q_ph: "Ответ остаётся только в этом браузере",
+    lim_h: "Ограничения и критика",
+    src_h: "Почитать",
+    copy_lens: "Промпт с этой линзой для ChatGPT или Claude",
+    prompt_hint: "Промпт содержит описание линзы, правила без диагнозов, твою ситуацию и ответы. Страница ничего не отправляет: ты сам(а) решаешь, вставлять ли его куда-то.",
+    prev: "Назад", next: "Следующая линза", to_sum: "К итогу",
+    sum_tab: "Итог",
+    sum_h: "Итог: что показали линзы",
+    sum_p: "Посмотри на ответы рядом. Где линзы сходятся? Какая оказалась ближе, а какая не подошла совсем? Это тоже информация.",
+    sum_none: "ответа нет",
+    take_l: "Что я заметил(а)",
+    step_l: "Один маленький шаг на эту неделю",
+    step_ph: "Например: начать разговор с того, что я чувствую, а не с «ты всегда»",
+    copy_all: "Промпт со всеми выбранными линзами",
+    copy_text: "Скопировать текстом",
+    dl_md: "Скачать .md",
+    new_sit: "Новая ситуация",
+    clear: "Стереть всё с этого устройства",
+    clear_q: "Стереть ситуацию и ответы из этого браузера?",
+    copied: "Скопировано", cleared: "Стёрто", downloaded: "Файл сохранён",
+    pc_h: "Хочешь посмотреть на ваши отношения с другой стороны?",
+    pc_p: "PairClear делает короткие тесты про то, что происходит между двумя людьми. Тоже считаются в браузере, без регистрации.",
+    pc_cta: "Открыть тесты PairClear",
+    f_what_h: "Что это",
+    f_what: "Просветительский инструмент для саморефлексии. Это не тест, не диагностика и не терапия: он ничего не измеряет, не оценивает людей и не заменяет специалиста.",
+    f_crisis_h: "Если тебе сейчас плохо",
+    f_crisis: "Если есть мысли навредить себе или дома есть насилие, отложи разбор. Позвони в экстренную службу: 112 в Европе и многих других странах, 911 в США и Канаде. Бесплатные линии поддержки в твоей стране: <a href=\"https://findahelpline.com\" target=\"_blank\" rel=\"noopener\">findahelpline.com</a>.",
+    f_priv_h: "Приватность",
+    f_priv: "Всё, что ты пишешь, остаётся в этом браузере. Страница не делает сетевых запросов и не собирает аналитику.",
+    f_pc: "Тесты об отношениях на PairClear",
+    f_src: "Исходный код на GitHub",
+    m_h: "Откуда эти тексты",
+    m1: "Описания школ написаны простым языком с помощью ИИ и сверены с первоисточниками, которые указаны в каждой линзе. Это упрощение: за каждой школой стоят десятилетия работы и споров.",
+    m2: "Линзы выбраны так, чтобы показать разные уровни: внутренний мир (психоанализ, Юнг), мысли (КПТ), потребность в близости (привязанность), систему отношений (системная терапия), стиль общения (транзактный анализ, Готтман, ННО).",
+    m3: "Если ситуация повторяется и мешает жить, лучший следующий шаг обычно разговор со специалистом, который работает в одном из этих подходов.",
+    md_title: "Разбор ситуации через психологические линзы",
+    md_note: "Сделано в инструменте «Психологические линзы» (PairClear). Это саморефлексия, а не диагностика."
+  },
+  en: {
+    brand: "Psychology lenses",
+    h1: "One situation, eight schools of psychology",
+    lead: "Describe what happened between you and another person and see how psychoanalysis, Jung, CBT, attachment theory and four more approaches would read it. The tool explains the schools; it never passes a verdict on people.",
+    sit_l: "Situation",
+    sit_opt: "(optional: you can just read about the lenses)",
+    sit_ph: "What happened, who said or did what, what you felt. Facts and actions, no labels.",
+    ex_l: "Invented examples:",
+    examples: [
+      ["the dishes and 'later'", "Example (invented). In the evening I ask my partner to help with the dishes. I hear 'later' and he keeps scrolling his phone. I say I always do everything myself. He goes to the other room without a word and doesn't talk to me until morning. This happens almost every week."],
+      ["no texts, then anger", "Example (invented). She stays out late with friends and doesn't answer my messages. I call five times. When she comes home she says I'm controlling her. I go silent for two days, then we act as if nothing happened."],
+      ["mum's questions", "Example (invented). Every time we visit, my mum asks when we're getting married. I joke it away. Afterwards my partner is cold all evening and at home says I never stand up for him."]
+    ],
+    lenses_l: "Lenses",
+    all: "Select all", none: "Clear",
+    go: "Look through the lenses",
+    pick_one: "Pick at least one lens.",
+    how_h: "How it works",
+    how: [
+      "Describe a situation in your own words, or take an invented example.",
+      "Pick one or more lenses.",
+      "For each, read what the school looks at and how it would see such a situation, and answer its questions for yourself.",
+      "At the end, compare the lenses and write down one small step. To continue in a chat, copy the ready-made prompt."
+    ],
+    how_note: "The lenses won't tell you who is right or 'what kind of person he is'. They show different ways of looking at the same thing.",
+    resume_h: "You have an unfinished reading",
+    resume: "Continue", restart: "Start over",
+    w_label_h: "Try describing actions, not the person",
+    w_label: (w) => "Words like " + w + " describe a person, not what happened. The lenses work with actions: what exactly was said or done, how often, what you felt. A label can't be made from a story, but actions can be looked at.",
+    w_safe_h: "If you are afraid or being controlled",
+    w_safe: "Violence, threats and control are not a 'dynamic between two people': responsibility lies with the one who does it. The lenses are not what matters here. Take care of your safety: emergency services 112 (911 in the US and Canada), free helplines at <a href=\"https://findahelpline.com\" target=\"_blank\" rel=\"noopener\">findahelpline.com</a>.",
+    w_crisis_h: "This matters more than any exercise",
+    w_crisis: "If you are thinking about hurting yourself, please reach out now: emergency services 112 (911 in the US and Canada) or a free helpline in your country at <a href=\"https://findahelpline.com\" target=\"_blank\" rel=\"noopener\">findahelpline.com</a>. You don't have to handle this alone.",
+    sit_k: "Situation",
+    looks_h: "What it looks at",
+    ideas_h: "Key ideas",
+    reading_h: "How this school would read such a situation",
+    reading_note: "This is a general way of looking, not a conclusion about you or anyone else.",
+    q_h: "Questions for yourself",
+    q_ph: "Your answer stays in this browser only",
+    lim_h: "Limits and criticism",
+    src_h: "Further reading",
+    copy_lens: "Prompt with this lens for ChatGPT or Claude",
+    prompt_hint: "The prompt contains the lens, no-diagnosis rules, your situation and your answers. This page sends nothing: you decide whether to paste it anywhere.",
+    prev: "Back", next: "Next lens", to_sum: "To the summary",
+    sum_tab: "Summary",
+    sum_h: "Summary: what the lenses showed",
+    sum_p: "Look at your answers side by side. Where do the lenses agree? Which felt closest, and which did not fit at all? That is information too.",
+    sum_none: "no answer",
+    take_l: "What I noticed",
+    step_l: "One small step for this week",
+    step_ph: "For example: start the talk with what I feel, not with 'you always'",
+    copy_all: "Prompt with all selected lenses",
+    copy_text: "Copy as text",
+    dl_md: "Download .md",
+    new_sit: "New situation",
+    clear: "Erase everything from this device",
+    clear_q: "Erase the situation and answers from this browser?",
+    copied: "Copied", cleared: "Erased", downloaded: "File saved",
+    pc_h: "Want to look at your relationship from another side?",
+    pc_p: "PairClear makes short quizzes about what is happening between two people. They are also computed in your browser, no sign-up.",
+    pc_cta: "Open PairClear quizzes",
+    f_what_h: "What this is",
+    f_what: "An educational self-reflection tool. It is not a test, a diagnosis or therapy: it measures nothing, does not assess people and does not replace a professional.",
+    f_crisis_h: "If you are not okay right now",
+    f_crisis: "If you are thinking about hurting yourself, or there is violence at home, put this aside. Call emergency services: 112 in Europe and many other countries, 911 in the US and Canada. Free helplines in your country: <a href=\"https://findahelpline.com\" target=\"_blank\" rel=\"noopener\">findahelpline.com</a>.",
+    f_priv_h: "Privacy",
+    f_priv: "Everything you type stays in this browser. The page makes no network requests and has no analytics.",
+    f_pc: "Relationship quizzes on PairClear",
+    f_src: "Source code on GitHub",
+    m_h: "Where these texts come from",
+    m1: "The descriptions of the schools were written in plain language with AI assistance and checked against the sources listed in each lens. They are simplifications: each school stands on decades of work and debate.",
+    m2: "The lenses were chosen to show different levels: the inner world (psychoanalysis, Jung), thoughts (CBT), the need for closeness (attachment), the system of relationships (family systems), and communication style (transactional analysis, Gottman, NVC).",
+    m3: "If a situation keeps repeating and gets in the way of life, the best next step is usually talking to a specialist who works in one of these approaches.",
+    md_title: "A situation through psychology lenses",
+    md_note: "Made with Psychology lenses (PairClear). This is self-reflection, not diagnosis."
+  }
+};
+
+/* ---------- safety checks (local only) ---------- */
+const CHECKS = {
+  label: /(нарцисс|токсичн|психопат|социопат|газлайт|созависим|пограничн|биполяр|шизоид|манипулятор|энергетическ\p{L}* вампир|narcissis|toxic|psychopath|sociopath|gaslight|codependen|borderline|bipolar|manipulator|energy vampire)\p{L}*/giu,
+  safe: /(бь[её]т|ударил|избил|душил|толкнул|угрожа|боюсь (его|её|ее)|насили|абьюз|запрещает (мне )?(общаться|выходить|видеться)|забирает (мой )?телефон|hits me|hit me|beats? me|beat me|chok(e|ed|es|ing) me|strangl|pushed me|threaten|afraid of (him|her)|violen|abus|won'?t let me (see|go|leave)|takes my phone)/iu,
+  crisis: /(суицид|покончить с собой|убить себя|не хочу жить|не хочется жить|навредить себе|самоповрежд|режу себя|порезать себя|suicid|kill myself|end my life|self[- ]harm|hurt myself|don'?t want to live|want to die|cut myself)/iu
+};
+function scan(text){
+  const s = String(text || "");
+  const labels = [...new Set((s.match(CHECKS.label) || []).map(w => w.toLowerCase()))].slice(0, 3);
+  return { labels, safe: CHECKS.safe.test(s), crisis: CHECKS.crisis.test(s) };
+}
+
+/* ---------- state ---------- */
+const blank = () => ({ situation: "", selected: LENSES.map(l => l.id).slice(0, 4), view: "start", answers: {}, takeaway: "", step: "" });
+let S = blank();
+let lang = "ru";
+
+const store = {
+  get(){ try { return JSON.parse(localStorage.getItem(KEY) || "null"); } catch(e){ return null; } },
+  set(v){ try { localStorage.setItem(KEY, JSON.stringify(v)); } catch(e){} },
+  del(){ try { localStorage.removeItem(KEY); } catch(e){} }
+};
+const save = () => store.set({ ...S, lang });
+
+function pickLang(){
+  const q = new URLSearchParams(location.search).get("lang");
+  if (q === "ru" || q === "en") return q;
+  const saved = store.get();
+  if (saved && (saved.lang === "ru" || saved.lang === "en")) return saved.lang;
+  const nav = (navigator.languages || [navigator.language || "en"]).join(",").toLowerCase();
+  return /(^|,)(ru|uk|be|kk)/.test(nav) ? "ru" : "en";
+}
+
+/* ---------- helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+const t = () => T[lang];
+const sel = () => S.selected.filter(id => byId[id]);
+const ans = (id) => (S.answers[id] = S.answers[id] || ["", "", "", ""]);
+const pcUrl = (medium) => (lang === "ru" ? "https://pairclear.com/ru/" : "https://pairclear.com/en/") + "?utm_source=github&utm_medium=" + medium + "&utm_campaign=" + CAMPAIGN;
+function toast(msg){ const el = $("#toast"); el.textContent = msg; el.classList.add("show"); clearTimeout(toast._t); toast._t = setTimeout(() => el.classList.remove("show"), 1800); }
+async function copy(text){
+  try { await navigator.clipboard.writeText(text); }
+  catch(e){
+    const ta = document.createElement("textarea"); ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); } catch(_){} ta.remove();
+  }
+  toast(t().copied);
+}
+
+function warnings(text){
+  const L = t(), r = scan(text);
+  let h = "";
+  if (r.crisis) h += `<div class="warn crisis" role="alert"><b>${esc(L.w_crisis_h)}</b>${L.w_crisis}</div>`;
+  if (r.safe) h += `<div class="warn crisis"><b>${esc(L.w_safe_h)}</b>${L.w_safe}</div>`;
+  if (r.labels.length) h += `<div class="warn"><b>${esc(L.w_label_h)}</b>${esc(L.w_label(r.labels.map(w => (lang === "ru" ? "«" + w + "»" : "\u201c" + w + "\u201d")).join(", ")))}</div>`;
+  return h;
+}
+
+/* ---------- static text ---------- */
+function applyStatic(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i]").forEach(el => {
+    const v = t()[el.dataset.i];
+    if (el.hasAttribute("data-html")) el.innerHTML = v; else el.textContent = v;
+  });
+  document.querySelectorAll(".langs button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+  $("#pclink").href = pcUrl("tool");
+  document.title = lang === "ru" ? "Психологические линзы: ситуация глазами 8 школ психологии" : "Psychology lenses: one situation through 8 schools of psychology";
+}
+
+/* ---------- views ---------- */
+function viewStart(){
+  const L = t();
+  const has = S.situation.trim() && S.view === "start" && Object.values(S.answers).some(a => a.some(x => x.trim()));
+  return `
+  <div class="grid2">
+    <div>
+      <h1>${esc(L.h1)}</h1>
+      <p class="lead">${esc(L.lead)}</p>
+      ${has ? `<div class="note" style="margin-top:28px"><b>${esc(L.resume_h)}</b>
+          <div class="row" style="margin-top:12px">
+            <button class="btn" data-act="resume">${esc(L.resume)}</button>
+            <button class="btn ghost" data-act="discard">${esc(L.restart)}</button>
+          </div></div>` : ""}
+      <form id="startForm" autocomplete="off">
+        <label class="lbl" for="sit">${esc(L.sit_l)} <span class="muted small">${esc(L.sit_opt)}</span></label>
+        <textarea id="sit" maxlength="3000" placeholder="${esc(L.sit_ph)}">${esc(S.situation)}</textarea>
+        <div id="warn">${warnings(S.situation)}</div>
+        <div class="chips"><span class="muted small" style="align-self:center">${esc(L.ex_l)}</span>${L.examples.map((e, i) => `<button type="button" class="chip" data-ex="${i}">${esc(e[0])}</button>`).join("")}</div>
+        <div class="lbl">${esc(L.lenses_l)}</div>
+        <div class="lensgrid">${LENSES.map(l => `<button type="button" class="lens" style="--c:${l.color}" data-lens="${l.id}" aria-pressed="${S.selected.includes(l.id)}"><b>${esc(l[lang].name)}</b><span>${esc(l[lang].looks_at)}</span></button>`).join("")}</div>
+        <div class="linkrow"><button type="button" class="linkbtn" data-act="all">${esc(L.all)}</button><button type="button" class="linkbtn" data-act="none">${esc(L.none)}</button></div>
+        <div class="row"><button class="btn" type="submit" id="goBtn" ${sel().length ? "" : "disabled"}>${esc(L.go)} →</button><span class="muted small" id="pickMsg">${sel().length ? "" : esc(L.pick_one)}</span></div>
+      </form>
+    </div>
+    <div class="card">
+      <h3>${esc(L.how_h)}</h3>
+      <ol class="steps" style="margin-top:16px">${L.how.map(s => `<li>${esc(s)}</li>`).join("")}</ol>
+      <p class="muted small" style="margin:6px 0 0">${esc(L.how_note)}</p>
+    </div>
+  </div>`;
+}
+
+function tabs(active){
+  const L = t();
+  return `<nav class="tabs" aria-label="${esc(L.lenses_l)}">${sel().map(id => {
+    const l = byId[id], done = (S.answers[id] || []).some(x => x.trim());
+    return `<button type="button" class="tab ${done ? "done" : ""}" style="--c:${l.color}" data-go="${id}" aria-current="${active === id}"><i></i>${esc(l[lang].name)}</button>`;
+  }).join("")}<button type="button" class="tab" data-go="summary" aria-current="${active === "summary"}">${esc(L.sum_tab)}</button></nav>`;
+}
+
+function sitBox(){
+  const L = t();
+  return S.situation.trim() ? `<div class="sit"><b>${esc(L.sit_k)}</b>${esc(S.situation.trim())}</div>` : "";
+}
+
+function viewLens(id){
+  const L = t(), l = byId[id], x = l[lang], a = ans(id);
+  const list = sel(), i = list.indexOf(id);
+  const next = list[i + 1];
+  return `
+    ${tabs(id)}
+    <div style="--c:${l.color}">
+      <div class="kicker"><i></i>${esc(x.short)}</div>
+      <h2>${esc(x.name)}</h2>
+      <p class="lead">${esc(x.looks_at)}</p>
+      <p class="muted small" style="max-width:700px">${esc(x.origin)}</p>
+      ${sitBox()}
+      ${warnings(S.situation)}
+      <section class="part"><h3>${esc(L.ideas_h)}</h3>
+        <div class="ideas">${x.ideas.map(p => `<div class="idea"><b>${esc(p[0])}</b><p>${esc(p[1])}</p></div>`).join("")}</div>
+      </section>
+      <section class="part"><h3>${esc(L.reading_h)}</h3>
+        <p class="reading">${esc(x.reading)}</p>
+        <p class="muted small" style="margin-top:10px">${esc(L.reading_note)}</p>
+      </section>
+      <section class="part"><h3>${esc(L.q_h)}</h3>
+        ${x.questions.map((q, k) => `<div class="qa"><label for="a${k}"><span>${k + 1}.</span>${esc(q)}</label><textarea class="ans" id="a${k}" data-a="${k}" maxlength="2000" placeholder="${esc(L.q_ph)}">${esc(a[k] || "")}</textarea></div>`).join("")}
+      </section>
+      <section class="part"><h3>${esc(L.lim_h)}</h3>
+        <ul class="lim">${x.limits.map(s => `<li>${esc(s)}</li>`).join("")}</ul>
+      </section>
+      <section class="part"><h3>${esc(L.src_h)}</h3>
+        <ul class="src">${l.sources.map(s => `<li>${esc(s)}</li>`).join("")}</ul>
+      </section>
+      <div class="actions"><button class="btn ghost" data-act="copyLens">${esc(L.copy_lens)}</button></div>
+      <p class="muted small" style="max-width:640px">${esc(L.prompt_hint)}</p>
+      <div class="navrow">
+        <button class="btn link" data-go="${i > 0 ? list[i - 1] : "start"}">← ${esc(L.prev)}</button>
+        <button class="btn" data-go="${next || "summary"}">${esc(next ? L.next : L.to_sum)} →</button>
+      </div>
+    </div>`;
+}
+
+function viewSummary(){
+  const L = t();
+  return `
+    ${tabs("summary")}
+    <h2>${esc(L.sum_h)}</h2>
+    <p class="muted" style="max-width:680px">${esc(L.sum_p)}</p>
+    ${sitBox()}
+    <div class="sum">${sel().map(id => {
+      const l = byId[id], x = l[lang], a = S.answers[id] || [];
+      return `<div class="l" style="--c:${l.color}"><h4><i></i><a href="#" data-go="${id}">${esc(x.name)}</a></h4>${
+        x.questions.map((q, k) => `<p><em>${esc(q)}</em><br>${a[k] && a[k].trim() ? esc(a[k].trim()) : `<span class="muted">· ${esc(L.sum_none)}</span>`}</p>`).join("")
+      }</div>`;
+    }).join("")}</div>
+    <label class="lbl" for="take">${esc(L.take_l)}</label>
+    <textarea id="take" class="ans" maxlength="2000" placeholder="${esc(L.q_ph)}">${esc(S.takeaway)}</textarea>
+    <label class="lbl" for="stepf">${esc(L.step_l)}</label>
+    <textarea id="stepf" class="ans" maxlength="1000" placeholder="${esc(L.step_ph)}">${esc(S.step)}</textarea>
+    <div class="actions">
+      <button class="btn" data-act="copyAll">${esc(L.copy_all)}</button>
+      <button class="btn ghost" data-act="copyText">${esc(L.copy_text)}</button>
+      <button class="btn ghost" data-act="md">${esc(L.dl_md)}</button>
+    </div>
+    <p class="muted small" style="max-width:640px">${esc(L.prompt_hint)}</p>
+    <div class="card" style="margin-top:32px">
+      <h3>${esc(L.pc_h)}</h3>
+      <p style="margin:8px 0 14px">${esc(L.pc_p)}</p>
+      <a class="btn ghost" href="${pcUrl("tool")}" target="_blank" rel="noopener">${esc(L.pc_cta)} →</a>
+    </div>
+    <div class="row">
+      <button class="btn ghost" data-act="new">${esc(L.new_sit)}</button>
+      <button class="btn link" data-act="clear">${esc(L.clear)}</button>
+    </div>`;
+}
+
+function asMarkdown(){
+  const L = t();
+  const out = ["# " + L.md_title, ""];
+  if (S.situation.trim()) out.push("## " + L.sit_k, "", S.situation.trim(), "");
+  sel().forEach(id => {
+    const x = byId[id][lang], a = S.answers[id] || [];
+    out.push("## " + x.name, "");
+    x.questions.forEach((q, k) => out.push("**" + q + "**", "", (a[k] && a[k].trim()) || "—", ""));
+  });
+  if (S.takeaway.trim()) out.push("## " + L.take_l, "", S.takeaway.trim(), "");
+  if (S.step.trim()) out.push("## " + L.step_l, "", S.step.trim(), "");
+  out.push("---", L.md_note);
+  return out.join("\n");
+}
+
+/* ---------- render ---------- */
+function render(focus){
+  const app = $("#app");
+  const v = S.view;
+  app.innerHTML = v === "start" ? viewStart() : v === "summary" ? viewSummary() : byId[v] ? viewLens(v) : viewStart();
+  if (focus) window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+  save();
+}
+
+function go(v){
+  if (v !== "start" && v !== "summary" && !byId[v]) v = "start";
+  S.view = v; render(true);
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click", (e) => {
+  const lb = e.target.closest(".langs button");
+  if (lb){ lang = lb.dataset.lang; applyStatic(); render(); return; }
+  if (e.target.closest("#home")){ e.preventDefault(); go("start"); return; }
+  const g = e.target.closest("[data-go]");
+  if (g){ e.preventDefault(); go(g.dataset.go); return; }
+  const ex = e.target.closest("[data-ex]");
+  if (ex){ S.situation = t().examples[+ex.dataset.ex][1]; render(); return; }
+  const ln = e.target.closest("[data-lens]");
+  if (ln){
+    const id = ln.dataset.lens;
+    S.selected = S.selected.includes(id) ? S.selected.filter(x => x !== id) : LENSES.map(l => l.id).filter(x => x === id || S.selected.includes(x));
+    ln.setAttribute("aria-pressed", String(S.selected.includes(id)));
+    $("#goBtn").disabled = !sel().length; $("#pickMsg").textContent = sel().length ? "" : t().pick_one;
+    save(); return;
+  }
+  const b = e.target.closest("[data-act]");
+  if (!b) return;
+  const act = b.dataset.act, L = t();
+  if (act === "all"){ S.selected = LENSES.map(l => l.id); render(); }
+  else if (act === "none"){ S.selected = []; render(); }
+  else if (act === "resume"){ go(sel()[0] || "start"); }
+  else if (act === "discard" || act === "new"){ const keep = S.selected; S = blank(); S.selected = keep; go("start"); }
+  else if (act === "copyLens"){ copy(CORE.lensPrompt(byId[S.view], lang, { situation: S.situation, answers: S.answers })); }
+  else if (act === "copyAll"){ copy(CORE.multiPrompt(sel().map(id => byId[id]), lang, { situation: S.situation, answers: S.answers })); }
+  else if (act === "copyText"){ copy(asMarkdown()); }
+  else if (act === "md"){
+    const blob = new Blob([asMarkdown()], { type: "text/markdown;charset=utf-8" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+    a.download = (lang === "ru" ? "linzy-" : "lenses-") + new Date().toISOString().slice(0, 10) + ".md";
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    toast(L.downloaded);
+  }
+  else if (act === "clear"){ if (confirm(L.clear_q)){ store.del(); S = blank(); go("start"); toast(L.cleared); } }
+});
+
+document.addEventListener("input", (e) => {
+  const el = e.target;
+  if (el.id === "sit"){ S.situation = el.value; $("#warn").innerHTML = warnings(el.value); save(); }
+  else if (el.dataset.a !== undefined && byId[S.view]){ ans(S.view)[+el.dataset.a] = el.value; save(); }
+  else if (el.id === "take"){ S.takeaway = el.value; save(); }
+  else if (el.id === "stepf"){ S.step = el.value; save(); }
+});
+
+document.addEventListener("submit", (e) => {
+  if (e.target.id === "startForm"){ e.preventDefault(); if (sel().length) go(sel()[0]); }
+});
+
+/* ---------- boot ---------- */
+lang = pickLang();
+const saved = store.get();
+if (saved){ S = { ...blank(), ...saved }; delete S.lang; }
+const qLens = new URLSearchParams(location.search).get("lens");
+if (qLens && byId[qLens]){ if (!S.selected.includes(qLens)) S.selected = [qLens]; S.view = qLens; }
+else if (S.view !== "start") S.view = "start";
+applyStatic();
+render();
+})();
+</script>
+</body>
+</html>
